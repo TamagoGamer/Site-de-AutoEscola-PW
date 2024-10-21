@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #00000000;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ff2800;
+    color: #fff200;
     padding: 1rem 0;
     text-align: center;
 }
@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff200;
     text-decoration: none;
 }
 
@@ -36,8 +36,8 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ff2800;
+    color: #fff200;
     text-align: center;
     padding: 1rem 0;
     position: fixed;
@@ -45,7 +45,7 @@ footer {
     width: 100%;
 }
 .container {
-    display: flex; /* Usando Flexbox */
+    display: flex; 
 }
 
 .div1, .div2 {
@@ -55,9 +55,9 @@ footer {
 }
 
 .div1 {
-    background-color: lightblue;
+    background-color: #46434368;
 }
 
 .div2 {
-    background-color: lightcoral;
+    background-color: #46434368;
 }
