@@ -44,3 +44,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.container {
+    display: flex; /* Usando Flexbox */
+}
+
+.div1, .div2 {
+    width: 50%; /* Ajuste a largura conforme necessário */
+    padding: 20px;
+    box-sizing: border-box; /* Para incluir padding na largura total */
+}
+
+.div1 {
+    background-color: lightblue;
+}
+
+.div2 {
+    background-color: lightcoral;
+}
