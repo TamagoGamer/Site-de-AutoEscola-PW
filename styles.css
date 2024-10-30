@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #00000000;
+    background-color: #2d2d2d;
 }
 
 header {
-    background-color: #ff2800;
-    color: #fff200;
+    background-color: #1e1e1e;
+    color: #888e42;
     padding: 1rem 0;
     text-align: center;
 }
@@ -23,7 +23,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff200;
+    color: #888e42;
     text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ section {
 }
 
 footer {
-    background-color: #ff2800;
+    background-color: #31503c;
     color: #fff200;
     text-align: center;
     padding: 1rem 0;
@@ -44,20 +44,41 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 .container {
-    display: flex; 
-}
-
-.div1, .div2 {
-    width: 50%; /* Ajuste a largura conforme necessário */
-    padding: 20px;
-    box-sizing: border-box; /* Para incluir padding na largura total */
-}
-
-.div1 {
-    background-color: #46434368;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .div2 {
-    background-color: #46434368;
+    width: 150px;            /* Largura fixa para o círculo */
+    height: 150px;           /* Altura igual à largura */
+    background-color: #3c5840;
+    border-radius: 50%;      /* Forma circular */
+    display: flex;
+    flex-direction: column;  /* Alinha itens verticalmente */
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.57);
+    transition: transform 0.3s;
+}
+
+.div2 h2 {
+    margin: 0;               /* Remove o espaço extra do título */
+    font-size: 18px;         /* Tamanho do título */
+}
+
+.div2 p {
+    margin-top: 5px;         /* Espaçamento entre o título e o texto "Comece já" */
+    font-size: 14px;         /* Tamanho do texto "Comece já" */
+    font-weight: normal;     /* Texto normal para o subtítulo */
+}
+
+.div2:hover {
+    transform: scale(1.05);  /* Efeito de hover */
 }
