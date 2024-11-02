@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoEscola PW</title>
-    <link rel="stylesheet" href="navbar.css"> <!-- Estilos da navbar -->
-    <link rel="stylesheet" href="style.css"> <!-- Estilos gerais da página -->
-    <link rel="stylesheet" href="main.css"> <!-- Estilos gerais da página -->
+    <link rel="stylesheet" href="/src/assets/Styles/navbar.css"> <!-- Estilos da navbar -->
+    <link rel="stylesheet" href="/src/assets/Styles/main.css"> <!-- Estilos gerais da página -->
 </head>
 <body>
 
 <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="LOGO">
+            <img src="/src/assets/img/descarregar (2).jfif" alt="LOGO">
             <span>AutoEscola PW</span>
         </div>
         <div class="menu-toggle" id="menu-toggle">☰</div> <!-- Botão de menu para telas pequenas -->
@@ -21,8 +20,8 @@
             <li>
                 <a href="#" class="menu-item" data-target="div1">AutoEscola PW</a>
                 <ul class="sub-menu">
-                    <li><a href="#" class="sub-menu-item" data-target="subdiv1-1">História</a></li>
-                    <li><a href="#" class="sub-menu-item" data-target="subdiv1-2">Equipe</a></li>
+                    <li><a href="about.html" class="sub-menu-item" data-target="subdiv1-1">História</a></li>
+                    <li><a href="about.html" class="sub-menu-item" data-target="subdiv1-2">Equipe</a></li>
                 </ul>
             </li>
             <li>
@@ -36,10 +35,6 @@
     </nav>
 </header>
 
-<aside class="sidebar">
-    <!-- A sidebar pode ser opcional se você quiser manter as opções no header -->
-</aside>
-
 <!-- Seções de conteúdo que serão exibidas ao clicar nos itens do menu -->
 <div id="div1" class="content-section">Conteúdo da AutoEscola PW</div>
 <div id="div2" class="content-section">Conteúdo dos Cursos</div>
@@ -50,7 +45,7 @@
 <div id="subdiv2-1" class="content-section sub-content">Conteúdo do Curso A</div>
 <div id="subdiv2-2" class="content-section sub-content">Conteúdo do Curso B</div>
 
-<script src="script.js"></script> <!-- Script para abrir/fechar sidebar -->
+<script src="/src/assets/js/script.js"></script> <!-- Script para abrir/fechar sidebar -->
 
 </body>
 </html>
