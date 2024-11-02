@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Navbar links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Sub-menu */
+.sub-menu {
+    display: none; /* Oculta sub-menus por padrão */
+    padding-left: 20px; /* Adiciona recuo para visualização */
+}
+
+/* Itens do menu */
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block; /* Faz o link ocupar a largura total */
+    font-weight: bold;
+}
+
+/* Mostra o sub-menu ao passar o mouse */
+.nav-links li:hover .sub-menu {
+    display: block; 
+}
+
+/* Responsive Sidebar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Exibir o botão do menu em telas pequenas */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Esconder nav-links por padrão em telas pequenas */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Abaixo da navbar */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    /* Mostrar nav-links quando a classe .show é adicionada */
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Ajustes para a sidebar em telas pequenas */
+    .sidebar {
+        display: none; /* Esconde a sidebar em telas pequenas, se necessário */
+    }
+}
+
+/* Estilo para as seções de conteúdo */
+.content-section {
+    display: none; /* Oculta todas as seções de conteúdo por padrão */
+}
+
+.sub-content {
+    display: none; /* Oculta todas as sub-seções de conteúdo por padrão */
+}

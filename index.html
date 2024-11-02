@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AutoEscola PW</title>
+    <link rel="stylesheet" href="navbar.css"> <!-- Estilos da navbar -->
+    <link rel="stylesheet" href="style.css"> <!-- Estilos gerais da página -->
+    <link rel="stylesheet" href="main.css"> <!-- Estilos gerais da página -->
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Site</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cursos.html">Contato</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="Contactos e FAQs.html">Contactos e FAQs</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Início</h2>
-        <p>Esta é a página inicial.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Meu Site Simples</p>
-    </footer>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="LOGO">
+            <span>AutoEscola PW</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- Botão de menu para telas pequenas -->
+        <ul class="nav-links" id="nav-links">
+            <li>
+                <a href="#" class="menu-item" data-target="div1">AutoEscola PW</a>
+                <ul class="sub-menu">
+                    <li><a href="#" class="sub-menu-item" data-target="subdiv1-1">História</a></li>
+                    <li><a href="#" class="sub-menu-item" data-target="subdiv1-2">Equipe</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="menu-item" data-target="div2">Cursos</a>
+                <ul class="sub-menu">
+                    <li><a href="#" class="sub-menu-item" data-target="subdiv2-1">Curso de Categoria A</a></li>
+                    <li><a href="#" class="sub-menu-item" data-target="subdiv2-2">Curso de Categoria B</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<aside class="sidebar">
+    <!-- A sidebar pode ser opcional se você quiser manter as opções no header -->
+</aside>
+
+<!-- Seções de conteúdo que serão exibidas ao clicar nos itens do menu -->
+<div id="div1" class="content-section">Conteúdo da AutoEscola PW</div>
+<div id="div2" class="content-section">Conteúdo dos Cursos</div>
+
+<!-- Sub-seções de conteúdo -->
+<div id="subdiv1-1" class="content-section sub-content">História da AutoEscola PW</div>
+<div id="subdiv1-2" class="content-section sub-content">Equipe da AutoEscola PW</div>
+<div id="subdiv2-1" class="content-section sub-content">Conteúdo do Curso A</div>
+<div id="subdiv2-2" class="content-section sub-content">Conteúdo do Curso B</div>
+
+<script src="script.js"></script> <!-- Script para abrir/fechar sidebar -->
+
 </body>
 </html>
