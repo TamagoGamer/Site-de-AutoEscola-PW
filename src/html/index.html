@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoEscola PW</title>
-    <link rel="stylesheet" href="/src/assets/Styles/navbar.css"> <!-- Estilos da navbar -->
-    <link rel="stylesheet" href="/src/assets/Styles/main.css"> <!-- Estilos gerais da página -->
+    <link rel="stylesheet" href="/src/assets/Styles/navbar.css">
+    <link rel="stylesheet" href="/src/assets/Styles/main.css">
+    <!-- Adicione a biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -15,37 +17,32 @@
             <img src="/src/assets/img/descarregar (2).jfif" alt="LOGO">
             <span>AutoEscola PW</span>
         </div>
-        <div class="menu-toggle" id="menu-toggle">☰</div> <!-- Botão de menu para telas pequenas -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <ul class="nav-links" id="nav-links">
-            <li>
-                <a href="#" class="menu-item" data-target="div1">AutoEscola PW</a>
-                <ul class="sub-menu">
-                    <li><a href="about.html" class="sub-menu-item" data-target="subdiv1-1">História</a></li>
-                    <li><a href="about.html" class="sub-menu-item" data-target="subdiv1-2">Equipe</a></li>
+            <li class="dropdown">
+                <a href="#" class="menu-item dropdown-toggle">
+                    AutoEscola PW <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html">História</a></li>
+                    <li><a href="about.html">Equipe</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#" class="menu-item" data-target="div2">Cursos</a>
-                <ul class="sub-menu">
-                    <li><a href="#" class="sub-menu-item" data-target="subdiv2-1">Curso de Categoria A</a></li>
-                    <li><a href="#" class="sub-menu-item" data-target="subdiv2-2">Curso de Categoria B</a></li>
+            <li class="dropdown">
+                <a href="#" class="menu-item dropdown-toggle">
+                    Cursos <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Curso de Categoria A</a></li>
+                    <li><a href="#">Curso de Categoria B</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
 
-<!-- Seções de conteúdo que serão exibidas ao clicar nos itens do menu -->
-<div id="div1" class="content-section">Conteúdo da AutoEscola PW</div>
-<div id="div2" class="content-section">Conteúdo dos Cursos</div>
+<!-- Seu conteúdo existente -->
 
-<!-- Sub-seções de conteúdo -->
-<div id="subdiv1-1" class="content-section sub-content">História da AutoEscola PW</div>
-<div id="subdiv1-2" class="content-section sub-content">Equipe da AutoEscola PW</div>
-<div id="subdiv2-1" class="content-section sub-content">Conteúdo do Curso A</div>
-<div id="subdiv2-2" class="content-section sub-content">Conteúdo do Curso B</div>
-
-<script src="/src/assets/js/script.js"></script> <!-- Script para abrir/fechar sidebar -->
-
+<script src="/src/assets/js/script.js"></script>
 </body>
 </html>
