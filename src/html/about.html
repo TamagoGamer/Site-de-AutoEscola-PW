@@ -4,27 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
-    <link rel="stylesheet" href="/src/assets/Styles/navbar.css"> <!-- Estilos da navbar -->
-    <link rel="stylesheet" href="/src/assets/Styles/main.css"> <!-- Estilos gerais da página -->
+     <!-- Folhas de CSS -->
+     <link rel="stylesheet" href="/src/assets/Styles/navbar.css">
+     <link rel="stylesheet" href="/src/assets/Styles/main.css">
+     <link rel="stylesheet" href="/src/assets/Styles/footer.css">
 </head>
 <body>
     <header>
-        <h1>Sobre Nós</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="Contactos e FAQs.html">Contactos e FAQs</a></li>
+        <!-- Logo e  nome da autoescola -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/src/assets/img/descarregar (2).jfif" alt="LOGO">
+                <span>AutoEscola PW</span>
+            </div>
+            <!-- Botões Dropdown -->
+            <ul class="nav-links" id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="menu-item dropdown-toggle">
+                        AutoEscola PW <span class="arrow-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">História</a></li>
+                        <li><a href="about.html">Equipe</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="menu-item dropdown-toggle">
+                        Cursos <span class="arrow-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Curso de Categoria A</a></li>
+                        <li><a href="#">Curso de Categoria B</a></li>
+                    </ul>
+                </li>
             </ul>
+            <div class="social-icons">
+                <a href="#"><img src="/src/assets/img/facebook-brands-solid.png" alt="Facebook"></a>
+                <a href="#"><img src="/src/assets/img/youtube-brands-solid.png" alt="YouTube"></a>
+                <a href="#"><img src="/src/assets/img/linkedin-brands-solid.png" alt="LinkedIn"></a>
+                <a href="#"><img src="/src/assets/img/instagram-brands-solid.png" alt="Instagram"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
         </nav>
     </header>
-    <main>
         <h2>Sobre</h2>
         <p>Informações sobre o site.</p>
     </main>
-    <footer>
-        <p>&copy; 2024 Meu Site Simples</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Formulário de contato -->
+            <div class="contact-form">
+                <h3>Entre em Contato</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensagem" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    
+            <!-- Lado direito com mapa, localização e horários -->
+            <div class="footer-right">
+                <div class="location-info">
+                    <div class="map-container">
+                        <div class="map">
+                            <img src="/src/assets/img/mapa-autoescola-pw.png" alt="Localização da AutoEscola PW">
+                        </div>
+                        <div class="address">
+                            <p>R. Silva Tavares 1, 1750-155 Lisboa</p>
+                        </div>
+                    </div>
+                    <!-- Horários de Funcionamento no Footer -->
+                    <div class="footer-hours">
+                        <h4>Horário de Funcionamento</h4>
+                        <div class="hours-item">
+                            <div class="clock-icon">
+                                <img src="/src/assets/img/clock-regular.png" alt="Ícone de relógio">
+                            </div>
+                            <div class="hours-text">
+                                <p class="days">Segunda a Sexta</p>
+                                <p class="time">09:00h - 20:00h</p>
+                            </div>
+                        </div>
+                        <div class="hours-item">
+                            <div class="clock-icon">
+                                <img src="/src/assets/img/clock-regular.png" alt="Ícone de relógio">
+                            </div>
+                            <div class="hours-text">
+                                <p class="days">Sábado e Domingo</p>
+                                <p class="time">09:00h - 13:00h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-info">
+            <div class="complaint-book">
+                <a href="https://www.livroreclamacoes.pt" target="_blank">
+                    <img src="https://www.istec.pt/wp-content/uploads/2023/12/LogoLR.png" alt="Livro de Reclamações">
+                </a>
+            </div>
+            <p class="copyright">© 2024 AutoEscola PW - Escola de instrução. All rights reserved</p>
+        </div>
     </footer>
+    <script src="/src/assets/js/script.js"></script>
 </body>
 </html>

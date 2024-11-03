@@ -9,14 +9,41 @@
 </head>
 <body>
     <header>
-        <h1>Cursos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="Contactos e FAQs.html">Contactos e FAQs</a></li>
+        <!-- Logo e  nome da autoescola -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/src/assets/img/descarregar (2).jfif" alt="LOGO">
+                <span>AutoEscola PW</span>
+            </div>
+            <!-- Botões Dropdown -->
+            <ul class="nav-links" id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="menu-item dropdown-toggle">
+                        AutoEscola PW <span class="arrow-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">História</a></li>
+                        <li><a href="about.html">Equipe</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="menu-item dropdown-toggle">
+                        Cursos <span class="arrow-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Curso de Categoria A</a></li>
+                        <li><a href="#">Curso de Categoria B</a></li>
+                    </ul>
+                </li>
             </ul>
+            <div class="social-icons">
+                <a href="#"><img src="/src/assets/img/facebook-brands-solid.png" alt="Facebook"></a>
+                <a href="#"><img src="/src/assets/img/youtube-brands-solid.png" alt="YouTube"></a>
+                <a href="#"><img src="/src/assets/img/linkedin-brands-solid.png" alt="LinkedIn"></a>
+                <a href="#"><img src="/src/assets/img/instagram-brands-solid.png" alt="Instagram"></a>
+            </div>
+            <!-- Menu ao diminuir o tamanho da tela para de um celular -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
         </nav>
     </header>
     <main>

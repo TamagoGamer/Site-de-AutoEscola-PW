@@ -1,55 +1,114 @@
-main {
-    padding: 20px;
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #31503c;
-    color: #fff200;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     width: 100%;
 }
 
-.container {
+body {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.div2 {
-    width: 150px;            /* Largura fixa para o círculo */
-    height: 150px;           /* Altura igual à largura */
-    background-color: #3c5840;
-    border-radius: 50%;      /* Forma circular */
-    display: flex;
-    flex-direction: column;  /* Alinha itens verticalmente */
-    justify-content: center;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.57);
-    transition: transform 0.3s;
+/* Ajustes para o conteúdo principal */
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
 }
 
-.div2 h2 {
-    margin: 0;               /* Remove o espaço extra do título */
-    font-size: 18px;         /* Tamanho do título */
+/* Ajustes para todas as seções */
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    padding: 0 15px;
 }
 
-.div2 p {
-    margin-top: 5px;         /* Espaçamento entre o título e o texto "Comece já" */
-    font-size: 14px;         /* Tamanho do texto "Comece já" */
-    font-weight: normal;     /* Texto normal para o subtítulo */
+/* Ajustes para imagens */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-.div2:hover {
-    transform: scale(1.05);  /* Efeito de hover */
+/* Responsividade para seções específicas */
+@media (max-width: 768px) {
+    /* Seção de Boas-vindas */
+    .welcome {
+        padding: 20px 15px;
+    }
+
+    .welcome h1 {
+        font-size: 24px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+    }
+
+    /* Grade de cursos */
+    .course-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .course-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Por que nos escolher */
+    .why-choose-us ul {
+        padding-left: 20px;
+    }
+
+    /* Depoimentos */
+    .testimonial-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    /* Dicas de Segurança */
+    .safety-tips ul {
+        padding-left: 20px;
+    }
+}
+
+/* Ajustes adicionais para telas muito pequenas */
+@media (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
