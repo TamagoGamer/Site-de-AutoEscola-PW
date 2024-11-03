@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título do site -->
     <title>AutoEscola PW</title>
-    <link rel="stylesheet" href="/src/assets/Styles/navbar.css">
-    <link rel="stylesheet" href="/src/assets/Styles/main.css">
-    <!-- Adicione a biblioteca de ícones Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Folhas de CSS -->
+    <link rel="stylesheet" href="/src/assets/Styles/navbar.css"> <!-- Import do css da  navbar -->
+    <link rel="stylesheet" href="/src/assets/Styles/main.css"> <!-- Import do css da main -->
 </head>
 <body>
 
 <header>
+    <!-- Logo e  nome da autoescola -->
     <nav class="navbar">
         <div class="logo">
             <img src="/src/assets/img/descarregar (2).jfif" alt="LOGO">
             <span>AutoEscola PW</span>
         </div>
+        <!-- Menu ao diminuir o tamanho da tela para de um celular -->
         <div class="menu-toggle" id="menu-toggle">☰</div>
+        <!-- Botões Dropdown -->
         <ul class="nav-links" id="nav-links">
             <li class="dropdown">
                 <a href="#" class="menu-item dropdown-toggle">
-                    AutoEscola PW <i class="fas fa-chevron-down"></i>
+                    AutoEscola PW <span class="arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="about.html">História</a></li>
@@ -30,7 +33,7 @@
             </li>
             <li class="dropdown">
                 <a href="#" class="menu-item dropdown-toggle">
-                    Cursos <i class="fas fa-chevron-down"></i>
+                    Cursos <span class="arrow-down"></span>
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Curso de Categoria A</a></li>

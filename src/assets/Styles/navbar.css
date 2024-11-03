@@ -63,6 +63,17 @@ body {
     font-weight: bold;
 }
 
+/* Estilo para a seta para baixo */
+.arrow-down {
+    display: inline-block;
+    margin-left: 5px; /* Ajuste o espaço entre o texto e a seta */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333; /* Cor da seta */
+}
+
 /* Mostra o sub-menu ao passar o mouse */
 .nav-links li:hover .sub-menu {
     display: block; 
