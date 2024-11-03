@@ -20,6 +20,51 @@ body {
     position: relative;
 }
 
+/* Social Icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.social-icons img {
+    width: 24px; /* Tamanho base dos ícones */
+    height: 24px;
+    transition: all 0.3s ease; /* Suaviza as transições */
+}
+
+/* Hover effect */
+.social-icons img:hover {
+    transform: scale(1.1); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media (max-width: 480px) {
+    .social-icons {
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .social-icons img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
 /* Logo */
 .logo {
     display: flex;
@@ -110,10 +155,6 @@ body {
         display: flex;
     }
 
-    /* Ajustes para a sidebar em telas pequenas */
-    .sidebar {
-        display: none; /* Esconde a sidebar em telas pequenas, se necessário */
-    }
 }
 
 /* Estilo para as seções de conteúdo */
@@ -168,11 +209,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Estilo para o ícone de seta */
-.fa-chevron-down {
-    font-size: 12px;
-    margin-left: 5px;
-}
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
