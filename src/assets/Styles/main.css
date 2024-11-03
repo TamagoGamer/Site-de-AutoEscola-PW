@@ -112,3 +112,41 @@ img {
         font-size: 14px;
     }
 }
+
+.professor{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+}
+
+.quadrados {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+}
+
+.quadrados img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.quadrados h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.quadrados p {
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
