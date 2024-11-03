@@ -2,20 +2,23 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-     <!-- Folhas de CSS -->
-     <link rel="stylesheet" href="/src/assets/Styles/navbar.css">
-     <link rel="stylesheet" href="/src/assets/Styles/main.css">
-     <link rel="stylesheet" href="/src/assets/Styles/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Título do site -->
+    <title>AutoEscola PW</title>
+    <!-- Folhas de CSS -->
+    <link rel="stylesheet" href="/src/assets/Styles/navbar.css">
+    <link rel="stylesheet" href="/src/assets/Styles/main.css">
+    <link rel="stylesheet" href="/src/assets/Styles/footer.css">
 </head>
 <body>
     <header>
         <!-- Logo e  nome da autoescola -->
         <nav class="navbar">
             <div class="logo">
-                <img src="/src/assets/img/descarregar (2).jfif" alt="LOGO">
-                <span>AutoEscola PW</span>
+                <a href="index.html">
+                    <img src="/src/assets/img/descarregar (2).jfif" alt="LOGO">
+                    <span>AutoEscola PW</span>
+                </a>
             </div>
             <!-- Botões Dropdown -->
             <ul class="nav-links" id="nav-links">
@@ -24,8 +27,9 @@
                         AutoEscola PW <span class="arrow-down"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="about.html">História</a></li>
-                        <li><a href="about.html">Equipe</a></li>
+                        <li><a href="historia.html">História</a></li>
+                        <li><a href="equipa.html">Equipa</a></li>
+                        <li><a href="politicas.html">Equipa</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -38,6 +42,7 @@
                     </ul>
                 </li>
             </ul>
+            <!-- Livro de reclamações -->
             <div class="social-icons">
                 <a href="#"><img src="/src/assets/img/facebook-brands-solid.png" alt="Facebook"></a>
                 <a href="#"><img src="/src/assets/img/youtube-brands-solid.png" alt="YouTube"></a>
@@ -47,9 +52,17 @@
             <div class="menu-toggle" id="menu-toggle">☰</div>
         </nav>
     </header>
-        <h2>Sobre</h2>
-        <p>Informações sobre o site.</p>
+
+    <main>
+        <!-- Sobre a equipa -->
+        <section class="welcome">
+            <h1>Bem-vindo à AutoEscola PW</h1>
+            <p>Sua jornada para se tornar um condutor seguro e confiante começa aqui!</p>
+            <img src="/src/assets/img/driving-instructor.jpg" alt="Instrutor de condução com aluno">
+        </section>
+
     </main>
+
     <footer class="footer">
         <div class="footer-content">
             <!-- Formulário de contato -->
@@ -108,7 +121,7 @@
                 </div>
             </div>
         </div>
-    
+        <!-- Livro de reclamações -->
         <div class="footer-info">
             <div class="complaint-book">
                 <a href="https://www.livroreclamacoes.pt" target="_blank">
