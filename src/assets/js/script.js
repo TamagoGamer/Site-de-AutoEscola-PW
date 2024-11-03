@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Adicionar classe 'visible' ao footer
     const footer = document.querySelector('footer');
     footer.classList.add('visible');
+    
     // Fecha o menu móvel ao clicar em um link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
