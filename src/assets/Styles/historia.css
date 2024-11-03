@@ -1,0 +1,63 @@
+.history-container {
+    display: flex;
+    flex-direction: column; /* Alterado para column para empilhar os elementos */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Adiciona espaço entre os elementos */
+    padding: 20px;
+}
+
+.history-text {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do texto */
+    text-align: justify; /* Opcional: para alinhar o texto */
+}
+
+.history-image {
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme necessário */
+    display: flex;
+    justify-content: center;
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: adiciona uma sombra suave */
+}
+
+.quadrados2 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centraliza o container */
+    max-width: 1600px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .history-container {
+        gap: 20px; /* Reduz o espaço em telas menores */
+    }
+
+    .history-image {
+        max-width: 100%;
+    }
+}
+
+/* Estilo adicional para as seções de Missão, Visão e Valores */
+.mission, .vision, .values {
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    margin-bottom: 15px;
+}
