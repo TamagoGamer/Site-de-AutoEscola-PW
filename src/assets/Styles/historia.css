@@ -1,0 +1,117 @@
+.historia-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.historia-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.historia-header h1 {
+    color: #31503c;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.historia-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.historia-texto {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.historia-texto p {
+    margin-bottom: 15px;
+}
+
+.historia-imagem {
+    width: 100%;
+    max-width: 600px;
+}
+
+.historia-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.missao-visao-valores {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.missao, .visao, .valores {
+    margin-bottom: 30px;
+}
+
+.missao h2, .visao h2, .valores h2 {
+    color: #31503c;
+    margin-bottom: 15px;
+}
+
+.valores ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.valores li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.valores li:before { content: "•";
+    color: #31503c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.conclusao {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.conclusao p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #31503c;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .historia-container {
+        padding: 15px;
+    }
+
+    .historia-header h1 {
+        font-size: 2em;
+    }
+
+    .historia-conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .historia-imagem {
+        width: 100%;
+        max-width: 400px;
+    }
+}
