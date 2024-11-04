@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Título do site -->
-    <title>AutoEscola PW</title>
-    <!-- Folhas de CSS -->
+    <title>AutoEscola PW - Perguntas Frequentes</title>
     <link rel="stylesheet" href="/src/assets/Styles/navbar.css">
     <link rel="stylesheet" href="/src/assets/Styles/main.css">
     <link rel="stylesheet" href="/src/assets/Styles/footer.css">
+    <link rel="stylesheet" href="/src/assets/Styles/faqs.css">
 </head>
 
 <body>
@@ -60,13 +59,50 @@
     </header>
 
     <main>
-        <!-- FAQs -->
-        <section class="welcome">
-            <h1>Bem-vindo à AutoEscola PW</h1>
-            <p>Sua jornada para se tornar um condutor seguro e confiante começa aqui!</p>
-            <img src="/src/assets/img/driving-instructor.jpg" alt="Instrutor de condução com aluno">
-        </section>
+        <div class="faqs-container">
+            <section class="faqs-header">
+                <h1>Perguntas Frequentes</h1>
+                <p>Encontre respostas para as dúvidas mais comuns sobre nossos cursos e processo de habilitação</p>
+            </section>
 
+            <div class="faq-categories">
+                <section class="faq-category">
+                    <h2 class="category-toggle">Processo de Inscrição <span class="toggle-icon">+</span></h2>
+                    <div class="category-content">
+                        <div class="faq-item">
+                            <h3 class="faq-toggle">Qual é a idade mínima para começar as aulas? <span class="toggle-icon">+</span></h3>
+                            <p class="faq-answer">Para categoria B (carros), você pode se inscrever aos 17 anos e meio, mas só poderá realizar o exame prático aos 18 anos. Para motos (A1), a idade mínima é 16 anos.</p>
+                        </div>
+
+                        <!-- Adicione mais itens de FAQ aqui -->
+                    </div>
+                </section>
+
+                <section class="faq-category">
+                    <h2 class="category-toggle">Número de Aulas por Curso <span class="toggle-icon">+</span></h2>
+                    <div class="category-content">
+                        <div class="faq-item">
+                            <h3 class="faq-toggle">Quantas aulas são necessárias para a categoria A1 (motos)? <span class="toggle-icon">+</span></h3>
+                            <p class="faq-answer">Para a categoria A1, são necessárias 28 aulas teóricas e 12 aulas práticas, totalizando 40 aulas.</p>
+                        </div>
+
+                        <!-- Adicione mais itens de FAQ aqui -->
+                    </div>
+                </section>
+
+                <section class="faq-category">
+                    <h2 class="category-toggle">Prazo para Conclusão do Curso <span class="toggle-icon">+</span></h2>
+                    <div class="category-content">
+                        <div class="faq-item">
+                            <h3 class="faq-toggle">Qual é o prazo máximo para concluir o processo de habilitação? <span class="toggle-icon">+</span></h3>
+                            <p class="faq-answer">O prazo máximo para concluir todo o processo de habilitação, desde a inscrição até a aprovação no exame prático, é de 2 anos.</p>
+                        </div>
+
+                        <!-- Adicione mais itens de FAQ aqui -->
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -138,6 +174,7 @@
         </div>
     </footer>
     <script src="/src/assets/js/script.js"></script>
+    <script src="/src/assets/js/faqs.js"></script>
 </body>
 
 </html>
