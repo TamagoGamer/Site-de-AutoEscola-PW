@@ -25,6 +25,8 @@ main {
     width: 100%;
     padding: 20px;
     overflow-x: hidden;
+    display: flex; /* Ativa o layout flexível */
+    justify-content: space-between;
 }
 
 /* Ajustes para todas as seções */
@@ -113,7 +115,7 @@ img {
     }
 }
 
-.professor{
+.professor1 .professor2{
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -121,9 +123,11 @@ img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 600px;
+    flex-wrap: wrap;
 }
 
 .quadrados {
+    display: flex;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -131,12 +135,20 @@ img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 600px;
+    width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 }
 
 .quadrados img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    idth: 100%; /* Ajusta a largura ao contêiner */
+    height: 500px; /* Altura fixa */
+    object-fit: cover;
 }
 
 .quadrados h2 {
@@ -149,4 +161,35 @@ img {
     text-align: justify;
     font-size: 15px;
     font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid; /* Ativa o layout de grid */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de igual largura */
+    gap: 10px; /* Espaçamento entre as divs */
+    max-width: 1200px; /* Mantém consistência com outros elementos */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px; /* Adiciona algum espaço ao redor */
+}
+
+.box {
+    height: 100px; /* Altura fixa para as divs */
+    background-color: lightblue; /* Cor de fundo para visualização */
+    text-align: center; /* Centraliza o texto */
+    line-height: 100px; /* Centraliza verticalmente o texto */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+/* Responsividade para o grid */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Muda para 1 coluna em telas muito pequenas */
+    }
 }
