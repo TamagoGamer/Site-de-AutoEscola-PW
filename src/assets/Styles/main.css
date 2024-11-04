@@ -27,6 +27,10 @@ main {
     overflow-x: hidden;
     display: flex; /* Ativa o layout flexível */
     justify-content: space-between;
+    margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 }
 
 /* Ajustes para todas as seções */
@@ -108,6 +112,7 @@ img {
 
     h2 {
         font-size: 20px;
+        text-align: justify;
     }
 
     p {
@@ -149,11 +154,13 @@ img {
     idth: 100%; /* Ajusta a largura ao contêiner */
     height: 500px; /* Altura fixa */
     object-fit: cover;
+    margin: 20px auto;
 }
 
 .quadrados h2 {
     font-size: 1.5em;
     margin: 10px 0;
+    margin: 20px auto;
 }
 
 .quadrados p {
@@ -161,5 +168,6 @@ img {
     text-align: justify;
     font-size: 15px;
     font-family: Arial, sans-serif;
+    margin: 20px auto;
 }
 
