@@ -119,11 +119,11 @@ img {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(30% - 40px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 600px;
-    flex-wrap: wrap;
 }
 
 .quadrados {
@@ -163,33 +163,3 @@ img {
     font-family: Arial, sans-serif;
 }
 
-.grid-container {
-    display: grid; /* Ativa o layout de grid */
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de igual largura */
-    gap: 10px; /* Espaçamento entre as divs */
-    max-width: 1200px; /* Mantém consistência com outros elementos */
-    margin: 0 auto; /* Centraliza o container */
-    padding: 20px; /* Adiciona algum espaço ao redor */
-}
-
-.box {
-    height: 100px; /* Altura fixa para as divs */
-    background-color: lightblue; /* Cor de fundo para visualização */
-    text-align: center; /* Centraliza o texto */
-    line-height: 100px; /* Centraliza verticalmente o texto */
-    border-radius: 5px; /* Adiciona cantos arredondados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-}
-
-/* Responsividade para o grid */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Muda para 1 coluna em telas muito pequenas */
-    }
-}
