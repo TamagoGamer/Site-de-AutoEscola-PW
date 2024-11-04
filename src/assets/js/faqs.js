@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const categoryToggles = document.querySelectorAll('.category-toggle');
     const faqToggles = document.querySelectorAll('.faq-toggle');
+    // Adiciona um evento  de clique para cada toggle dentro do  array categoryToggles
 
     categoryToggles.forEach(toggle => {
         toggle.addEventListener('click', function() {
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
+    // Adiciona um evento  de clique para cada toggle dentro do  array faqToggles
     faqToggles.forEach(toggle => {
         toggle.addEventListener('click', function() {
             this.classList.toggle('active');
