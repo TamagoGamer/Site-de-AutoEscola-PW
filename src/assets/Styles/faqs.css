@@ -1,3 +1,4 @@
+/* Folha de estilo para os FAQs */
 .faqs-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -69,7 +70,8 @@
     transform: rotate(45deg);
 }
 
-/* Responsividade */
+/* Responsividade para  dispositivos móveis */
+
 @media (max-width: 768px) {
     .faqs-container {
         padding: 15px;

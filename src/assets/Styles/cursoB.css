@@ -18,6 +18,7 @@
     margin-bottom: 10px;
 }
 
+/* Documentação */
 .documentacao {
     background-color: #f5f5f5;
     padding: 20px;
@@ -48,6 +49,7 @@
     left: -15px;
 }
 
+/* Descrição */
 .descricao-curso {
     line-height: 1.6;
 }
@@ -85,6 +87,7 @@
     margin-bottom: 20px;
 }
 
+/* Conclusão */
 .conclusao {
     background-color: #f5f5f5;
     padding: 20px;
@@ -100,6 +103,7 @@
     margin-top: 20px;
 }
 
+/* Responsividade para  dispositivos móveis */
 @media (max-width: 768px) {
     .curso-container {
         padding: 15px;

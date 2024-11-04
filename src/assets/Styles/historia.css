@@ -1,3 +1,4 @@
+/* História */
 .historia-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -47,6 +48,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Missão, Visão e Valores */
 .missao-visao-valores {
     background-color: #f5f5f5;
     padding: 30px;
@@ -81,6 +83,7 @@
     left: 0;
 }
 
+/* Conclusão */
 .conclusao {
     background-color: #f5f5f5;
     padding: 20px;
@@ -96,6 +99,7 @@
     margin-top: 20px;
 }
 
+/* Adaptar para telas pequenas */
 @media (max-width: 768px) {
     .historia-container {
         padding: 15px;

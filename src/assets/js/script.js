@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.getElementById("nav-links");
     const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
-    // Toggle menu mobile
+    // Menu Mobile
     menuToggle.addEventListener("click", function() {
         navLinks.classList.toggle("show");
     });
 
-    // Handling dropdowns on mobile
+    // Dropdowns no mobile
     dropdownToggles.forEach(toggle => {
         toggle.addEventListener("click", function(e) {
             if (window.innerWidth <= 768) {
