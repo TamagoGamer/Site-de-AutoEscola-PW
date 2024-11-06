@@ -99,6 +99,7 @@ html, body {
 .dropdown-menu li {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .dropdown-menu a {
@@ -164,6 +165,12 @@ html, body {
 
     .nav-links.show {
         display: flex;
+        z-index: 1000; /* Um valor alto para garantir que fique na frente */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
     }
 
     .nav-links li {
