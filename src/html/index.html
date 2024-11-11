@@ -63,75 +63,81 @@
     </header>
 
     <main>
-        <!-- Seção de Boas-vindas -->
-        <section class="welcome">
-            <h1>Bem-vindo à AutoEscola PW</h1>
-            <p>Sua jornada para se tornar um condutor seguro e confiante começa aqui!</p>
-            <img src="/src/assets/img/driving-instructor.jpg" alt="Instrutor de condução com aluno">
-        </section>
-
-        <!-- Nossos Cursos -->
-        <section class="courses">
-            <h2>Nossos Cursos</h2>
-            <div class="course-grid">
-                <div class="course-item">
-                    <img src="/src/assets/img/car-lesson.jpg" alt="Aula de condução de carro">
-                    <h3>Categoria B - Automóveis</h3>
-                    <p>Aprenda a conduzir carros com segurança e confiança. Curso completo com aulas teóricas e
-                        práticas.</p>
+            <div class="carousel">
+                <input type="radio" name="slides" id="slide1" checked>
+                <input type="radio" name="slides" id="slide2">
+                <input type="radio" name="slides" id="slide3">
+        
+                <div class="carousel-images">
+                    <div class="slide">
+                        <img src="/src/assets/img/Lateral A.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/img/Lateral B.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/img/Lateral C.jpg" alt="Imagem 3">
+                    </div>
                 </div>
-                <div class="course-item">
-                    <img src="/src/assets/img/motorcycle-lesson.jpg" alt="Aula de condução de moto">
-                    <h3>Categoria A - Motociclos</h3>
-                    <p>Domine as técnicas de condução de motos. Foco em segurança e habilidades avançadas.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Por que escolher a AutoEscola PW -->
-        <section class="why-choose-us">
-            <h2>Por que escolher a AutoEscola PW?</h2>
-            <ul>
-                <li>Instrutores experientes e certificados</li>
-                <li>Frota moderna e bem mantida</li>
-                <li>Aulas teóricas interativas</li>
-                <li>Horários flexíveis</li>
-                <li>Alta taxa de aprovação no exame</li>
-            </ul>
-            <img src="/src/assets/img/driving-school-team.jpg" alt="Equipe da AutoEscola PW">
-        </section>
-
-        <!-- Depoimentos -->
-        <section class="testimonials">
-            <h2>O que dizem nossos alunos</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial">
-                    <img src="/src/assets/img/student-photo1.jpg" alt="Foto do aluno">
-                    <p>"Graças à AutoEscola PW, passei no exame de condução na primeira tentativa. Os instrutores são
-                        excelentes!"</p>
-                    <p class="student-name">- Maria Silva</p>
-                </div>
-                <div class="testimonial">
-                    <img src="/src/assets/img/student-photo2.jpg" alt="Foto do aluno">
-                    <p>"As aulas teóricas são muito interessantes e as práticas me deram muita confiança. Recomendo!"
-                    </p>
-                    <p class="student-name">- João Santos</p>
+        
+                <div class="carousel-nav">
+                    <label for="slide1" class="carousel-dot"></label>
+                    <label for="slide2" class="carousel-dot"></label>
+                    <label for="slide3" class="carousel-dot"></label>
                 </div>
             </div>
-        </section>
+            <div class="quadrados">
+                <div class="professor1">
+                    <img src="/src/assets/img/Cursos_index.png" alt="Logo 1">
+                    <h2>Cursos de Condução de Qualidade para Você!</h2>
+                    <p>Está pronto para tirar sua habilitação ou aprimorar suas habilidades ao volante? Oferecemos cursos de condução completos, com aulas teóricas e práticas que garantem um aprendizado seguro e eficaz. Nossos instrutores são altamente qualificados e estão prontos para te ajudar a conquistar a confiança necessária para dirigir com segurança.
 
-        <!-- Dicas de Segurança -->
-        <section class="safety-tips">
-            <h2>Dicas de Segurança no Trânsito</h2>
-            <ul>
-                <li>Sempre use o cinto de segurança</li>
-                <li>Respeite os limites de velocidade</li>
-                <li>Não use o celular enquanto dirige</li>
-                <li>Mantenha a distância segura do veículo à frente</li>
-                <li>Faça a manutenção regular do seu veículo</li>
-            </ul>
-            <img src="/src/assets/img/safe-driving.jpg" alt="Condução segura">
-        </section>
+                        Seja para primeira habilitação, reciclagem ou direção defensiva, temos o curso certo para você. Venha aprender conosco e prepare-se para dirigir com tranquilidade e responsabilidade!
+                        
+                        Inscreva-se já e comece sua jornada ao volante!</p>
+                    <p class="descricao"></p>
+                </div>
+            </div>
+            <div class="quadrados">
+                <section class="safety-tips">
+                    <h2>Dicas de Segurança no Trânsito</h2>
+                    <ul>
+                        <li>Sempre use o cinto de segurança</li>
+                        <li>Respeite os limites de velocidade</li>
+                        <li>Não use o celular enquanto dirige</li>
+                        <li>Mantenha a distância segura do veículo à frente</li>
+                        <li>Faça a manutenção regular do seu veículo</li>
+                    </ul>
+                    <img src="/src/assets/img/Segurança.jpg" alt="Condução segura">
+                </section>
+            </div>
+            <div class="quadrados">
+                <section class="testimonials">
+                    <h2>O que dizem nossos alunos</h2>
+                    <div class="testimonial-grid">
+                        <div class="testimonial">
+                            <img src="/src/assets/img/Aluna.jpg" alt="Foto do aluno">
+                            <p>"Graças à AutoEscola PW, passei no exame de condução na primeira tentativa. Os instrutores são
+                                excelentes!"</p>
+                            <p class="student-name">- Maria Silva</p>
+                        </div>
+                    
+                    </div>
+                </section>
+            </div>
+            <div class="quadrados">
+                <section class="testimonials">
+                    <h2>O que dizem nossos alunos</h2>
+                    <div class="testimonial-grid">
+                        <div class="testimonial">
+                            <img src="/src/assets/img/Aluno.jpg" alt="Foto do aluno">
+                            <p>"As aulas teóricas são muito interessantes e as práticas me deram muita confiança. Recomendo!"
+                            </p>
+                            <p class="student-name">- João Santos</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
     </main>
 
     <footer class="footer">
