@@ -21,6 +21,8 @@ html, body {
     padding: 10px 20px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative; /* ou absolute, dependendo do seu layout */
+    z-index: 1000; /* Um valor alto para garantir que fique acima de outros elementos */
 }
 
 .logo {
